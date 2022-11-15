@@ -18,7 +18,7 @@ li {
     display:grid;
     height: 100vh;
     grid-template-columns: 1fr 4fr;
-    grid-template-rows: 1fr 0.2fr 1fr 0.2fr 0.75fr; 
+    grid-template-rows: 0fr 0.2fr 0.5fr 0.2fr 0.25fr; 
     grid-template-areas: 
     "sidebar header"
     "sidebar content1"
@@ -28,38 +28,82 @@ li {
 }
 
 header {
-    background: #84ffff;
+    background: #f4e9de;
     grid-area: header;
     text-align: center;
 }
 
+#bottom {
+    display:flex;
+    justify-content: right;
+}
 
 #sidebar{
-    background-color: antiquewhite;
+    background-color: #faf4ec;
     grid-area: sidebar;
     display: flex;
     flex-direction: column;
 }
 
+.button1 { 
+    display:flex;
+    background-color: #3e8686;
+    margin-left: 0%;
+    float: left;
+    padding: 5px 20px; /*gives my buttons some thickness */
+    border-radius: 25px; /*rounds my buttons borders*/
+}
+
+.button2 {
+    display: flex;
+    background-color: #6e6a87;
+    float: right;
+    padding: 5px 20px;
+    border-radius: 25px;
+}
+
 #content1 {
-    background-color: purple;
+    background-color: #f4e9de;
     grid-area: content1;
 }
 
+.textholder {
+    background-color: #f4e9de;
+}
 #longbox {
-    background: palegoldenrod;
+    background: #f9f4eb;
     grid-area: longbox;
+    display: flex;
+    margin: 10px;
+    height: 100px;
+    border: #7fabed 3px solid;
 }
 
 #content2 {
-    background-color: #3e8686;
+    background-color: #f4e9de;
     grid-area: content2;
+}
 
+.button3 {
+    display: flex;
+    background-color: #5395a0;
+    float: right;
+    padding: 5px 20px;
+    border-radius: 25px;
+}
+
+.button4 {
+    display: flex;
+    background-color: #d8817e;
+    float: right;
+    padding: 5px 20px;
+    border-radius: 25px;
 }
 
 footer {
     background-color: #555;
     grid-area: footer;
+    text-align: center;
 }
 
 @media only screen and (max-width:550px) {
