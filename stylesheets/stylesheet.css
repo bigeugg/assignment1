@@ -7,16 +7,18 @@ h1 {
     font-family: 'Source Code Pro', monospace;
     font-weight: bold;
     color: #4B7171;
+    text-align: center;
 }
 
-li {
+#sidebar ul {
     list-style-type: square;
     color: #4B7171;
+    padding: 0 10%;
 }
 
 .grid-container {
     display:grid;
-    height: 100vh;
+    height: 100vmax;
     grid-template-columns: 1fr 4fr;
     grid-template-rows: 0fr 0.2fr 0.5fr 0.2fr 0.25fr; 
     grid-template-areas: 
@@ -43,6 +45,8 @@ header {
     grid-area: sidebar;
     display: flex;
     flex-direction: column;
+    align-items: center;
+    padding: 10px;
 }
 
 .button {
@@ -56,17 +60,19 @@ header {
 
 .button1 { 
     background-color: #4B7171;
-    float: left;
 }
 
 .button2 {
     background-color: #6F6A87;
-    float: right;
 }
 
 #content1 {
+    display: flex;
+    flex-direction: row;
     background-color: #f4e9de;
     grid-area: content1;
+    justify-content: space-between;
+    padding: 10px;
 }
 
 .textholder {
@@ -87,6 +93,7 @@ header {
     background-color: #f4e9de;
     grid-area: content2;
     justify-content: end;
+    padding: 10px;
 }
 
 .button3 {
