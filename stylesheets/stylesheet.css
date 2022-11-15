@@ -5,14 +5,13 @@ body {
 h1 {
     font-family: 'Source Code Pro', monospace;
     font-weight: bold;
-    color: #3e8686;
+    color: #4B7171;
 }
 
 li {
     list-style-type: square;
-    color: #3e8686;
+    color: #4B7171;
 }
-
 
 .grid-container {
     display:grid;
@@ -47,7 +46,8 @@ header {
 
 .button1 { 
     display:flex;
-    background-color: #3e8686;
+    background-color: #4B7171;
+    color: white;
     margin-left: 0%;
     float: left;
     padding: 5px 20px; /*gives my buttons some thickness */
@@ -56,7 +56,8 @@ header {
 
 .button2 {
     display: flex;
-    background-color: #6e6a87;
+    background-color: #6F6A87;
+    color: white;
     float: right;
     padding: 5px 20px;
     border-radius: 25px;
@@ -87,6 +88,7 @@ header {
 .button3 {
     display: flex;
     background-color: #5395a0;
+    color: white;
     float: right;
     padding: 5px 20px;
     border-radius: 25px;
@@ -94,14 +96,15 @@ header {
 
 .button4 {
     display: flex;
-    background-color: #d8817e;
+    background-color: #D9827C;
+    color: white;
     float: right;
     padding: 5px 20px;
     border-radius: 25px;
 }
 
 footer {
-    background-color: #555;
+    background-color: #f4e9de;
     grid-area: footer;
     text-align: center;
 }
