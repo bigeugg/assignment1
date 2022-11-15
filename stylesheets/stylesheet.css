@@ -1,5 +1,6 @@
 body {
     margin: 0;
+    font-family:'Source Code Pro', monospace;
 }
 
 h1 {
@@ -45,11 +46,12 @@ header {
 }
 
 .button {
-    display:flex;
-    color: white;
-    margin-left: 0%;
-    padding: 5px 20px; /*gives my buttons some thickness */
-    border-radius: 25px; /*rounds my buttons borders*/
+    border: 0;
+    padding: 10px 20px;
+    font-size: 1rem;
+    color: #fff;
+    border-radius: 10px;
+    background-color: rgba(220, 0, 0, 1); /*rounds my buttons borders*/
 }
 
 .button1 { 
@@ -81,18 +83,19 @@ header {
 }
 
 #content2 {
+    display: flex;
     background-color: #f4e9de;
     grid-area: content2;
+    justify-content: end;
 }
 
 .button3 {
     background-color: #5395a0;
-    float: right;
+    margin: 5px;
 }
 
 .button4 {
     background-color: #D9827C;
-    float: right;
 }
 
 footer {
