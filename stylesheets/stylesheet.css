@@ -20,7 +20,7 @@ h1 {
     display:grid;
     height: 100vh;
     grid-template-columns: 1fr 4fr;
-    grid-template-rows: 0fr 0.2fr 0.5fr 0.2fr 0.25fr; 
+    grid-template-rows: 0.2fr 0.33fr 0.2fr 0.25fr; 
     grid-template-areas: 
     "sidebar header"
     "sidebar content1"
@@ -77,6 +77,8 @@ header {
 
 .textholder {
     background-color: #f4e9de;
+    padding: 5px;
+    align-items: center;
 }
 
 .longbox {
