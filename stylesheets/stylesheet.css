@@ -44,23 +44,22 @@ header {
     flex-direction: column;
 }
 
-.button1 { 
+.button {
     display:flex;
-    background-color: #4B7171;
     color: white;
     margin-left: 0%;
-    float: left;
     padding: 5px 20px; /*gives my buttons some thickness */
     border-radius: 25px; /*rounds my buttons borders*/
 }
 
+.button1 { 
+    background-color: #4B7171;
+    float: left;
+}
+
 .button2 {
-    display: flex;
     background-color: #6F6A87;
-    color: white;
     float: right;
-    padding: 5px 20px;
-    border-radius: 25px;
 }
 
 #content1 {
@@ -86,21 +85,13 @@ header {
 }
 
 .button3 {
-    display: flex;
     background-color: #5395a0;
-    color: white;
     float: right;
-    padding: 5px 20px;
-    border-radius: 25px;
 }
 
 .button4 {
-    display: flex;
     background-color: #D9827C;
-    color: white;
     float: right;
-    padding: 5px 20px;
-    border-radius: 25px;
 }
 
 footer {
