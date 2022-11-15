@@ -1,3 +1,70 @@
 body {
-    background-color: blue;
+    margin: 0;
+}
+
+h1 {
+    font-family: 'Source Code Pro', monospace;
+    font-weight: bold;
+    color: #3e8686;
+}
+
+li {
+    list-style-type: square;
+    color: #3e8686;
+}
+
+
+.grid-container {
+    display:grid;
+    height: 100vh;
+    grid-template-columns: 1fr 4fr;
+    grid-template-rows: 1fr 0.2fr 1fr 0.2fr 0.75fr; 
+    grid-template-areas: 
+    "sidebar header"
+    "sidebar content1"
+    "sidebar longbox"
+    "sidebar content2"
+    "sidebar footer"
+}
+
+header {
+    background: #84ffff;
+    grid-area: header;
+    text-align: center;
+}
+
+
+#sidebar{
+    background-color: antiquewhite;
+    grid-area: sidebar;
+    display: flex;
+    flex-direction: column;
+}
+
+#content1 {
+    background-color: purple;
+    grid-area: content1;
+}
+
+#longbox {
+    background: palegoldenrod;
+    grid-area: longbox;
+}
+
+#content2 {
+    background-color: #3e8686;
+    grid-area: content2;
+
+}
+
+footer {
+    background-color: #555;
+    grid-area: footer;
+}
+
+@media only screen and (max-width:550px) {
+    .grid-container {
+        grid-template-columns: 1fr;
+        grid-template-rows: 0.4fr;
+    }
 }
