@@ -1,6 +1,15 @@
-.darkMode {
-    background-color: ;
+.darkBG {
+    background-color: #00005C;
 }
+
+.darkSidebar {
+    background-color: #4848b6;
+}
+
+.darkTextArea {
+    background-color: #fff;
+}
+
 
 body {
     margin: 0;
@@ -66,8 +75,16 @@ header {
     background-color: #4B7171;
 }
 
+.darkBlue {
+    background-color: #0000b4;
+}
+
 .button2 {
     background-color: #6F6A87;
+}
+
+.darkPurple {
+    background-color: #4e1562;
 }
 
 .content1 {
@@ -110,6 +127,10 @@ header {
 
 .button4 {
     background-color: #D9827C;
+}
+
+.darkRed {
+    background-color: #a20101;
 }
 
 footer {

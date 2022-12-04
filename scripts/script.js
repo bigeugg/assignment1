@@ -3,8 +3,11 @@ function clickHandler(event) {
     if ((event.target.textContent === "Dark Theme") || (event.target.textContent === "Light Theme"))//background color is pressed //make sure its the same exact wording as the button
     {
         changeBGcolor();
-        changeButtoncolor();
     }
+}
+
+function changeBGcolor() {
+    document.body.style.backgroundColor("darkBG"); //add the css of background color too!!!
 }
 
 function changeBGcolor() {
@@ -14,3 +17,48 @@ function changeBGcolor() {
     var textArea = document.getElementById('textArea');
     textArea.classList.toggle('darkTextArea');
 }
+
+function textChange() {
+    if (btn.textContent === 'Dark Theme') {
+        btn.textContent = 'Light Theme';
+    }
+    }
+
+    function changeButtonColor(){
+        var btn1 = document.getElementById('button1')
+        btn1.classList.toggle('darkBlue')
+        btn1.classList.toggle('button1')
+        var btn2 = document.getElementById('button2')
+        btn2.classList.toggle('darkPurple')
+        btn2.classList.toggle('button2')
+        var btn3 = document.getElementById('button3')
+        btn3.classList.toggle('darkBlue')
+        btn3.classList.toggle('button3')
+        var btn4 = document.getElementById('button4')
+        btn4.classList.toggle('darkRed')
+        btn4.classList.toggle('button4')
+    }
+
+function saved(){
+  if (textArea.value == ''){
+    alert('Nothing to save')
+  } else{
+    var name = prompt('Name this Note')
+    notesArray.push({name: name, body: textArea.value})
+    const listItem = document.createElement("li")
+    listItem.textContent = name
+    noteList.append(listItem)
+    textArea.value = ''
+  }
+}
+
+function liClicked(event){
+    var title = event.target.textContent
+    var body = notesArray.find(item => item.name === title)
+    textArea.value = body.body
+  }
+  
+  document.body.addEventListener("click", clickHandler)
+  btn.addEventListener('click', textChange)
+  save.addEventListener('click', saved)
+  noteList.addEventListener('click', liClicked)
