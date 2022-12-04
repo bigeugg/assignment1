@@ -39,26 +39,5 @@ function textChange() {
         btn4.classList.toggle('button4')
     }
 
-function saved(){
-  if (textArea.value == ''){
-    alert('Nothing to save')
-  } else{
-    var name = prompt('Name this Note')
-    notesArray.push({name: name, body: textArea.value})
-    const listItem = document.createElement("li")
-    listItem.textContent = name
-    noteList.append(listItem)
-    textArea.value = ''
-  }
-}
 
-function liClicked(event){
-    var title = event.target.textContent
-    var body = notesArray.find(item => item.name === title)
-    textArea.value = body.body
-  }
-  
-  document.body.addEventListener("click", clickHandler)
-  btn.addEventListener('click', textChange)
-  save.addEventListener('click', saved)
-  noteList.addEventListener('click', liClicked)
+    
